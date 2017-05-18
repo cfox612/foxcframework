@@ -1,0 +1,249 @@
+/* grid styles */
+
+ .grid-container {
+  width : 100%;
+  max-width : 1200px; 
+  margin: auto;
+}
+
+.grid-container *{
+  box-sizing: border-box; 
+}
+
+.row:before, 
+.row:after {
+  content:"";
+  display: table ;
+  clear:both;
+}
+
+[class*='col'] {
+  float: left;
+  min-height: 1px; 
+  width: 8.3%;
+  padding: 10px;
+}
+
+.test {
+  width: 100%;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* column widths */
+.col1 {
+  width: 8.33%; 
+}
+
+.col2 {
+  width: 16.66%; 
+}
+
+.col3 {
+  width: 25%; 
+}
+
+.col4 {
+  width: 33.33%;
+}
+
+.col5 {
+  width: 41.66%;
+}
+
+.col6 {
+  width: 50%;
+}
+
+.col7 {
+	width: 58.33%;
+}
+
+.col8 {
+	width: 66.66%;
+}
+
+.col9 {
+	width: 75%;
+}
+
+.col10 {
+	width: 83.33%;
+}
+
+.col11 {
+	width: 91.66%;
+}
+
+.col12 {
+	width: 100%;
+}
+
+.col-offset2 {
+  margin-left: 16.66%;
+}
+
+.col-offset3 {
+  margin-left: 25%;
+}
+
+.col-offset4 {
+  margin-left: 33.33%;
+}
+
+@media #{$bp-tablet} {
+  .col1 {
+    width: 25%; 
+  }
+
+  .col2 {
+    width: 25%; 
+  }
+
+  .col3 {
+    width: 25%; 
+  }
+
+  .col4 {
+    width: 50%;
+  }
+
+  .col5 {
+    width: 50%;
+  }
+
+  .col6 {
+    width: 50%;
+  }
+
+  .col7 {
+    width: 100%;
+  }
+
+  .col8 {
+    width: 100%;
+  }
+
+  .col9 {
+    width: 100%;
+  }
+
+  .col10 {
+    width: 100%;
+  }
+
+  .col11 {
+    width: 100%;
+  }
+
+  .col12 {
+    width: 100%;
+  }
+  .col-offset2 {
+    margin-left: 25%;
+  }
+
+  .col-offset3 {
+    margin-left: 25%;
+  }
+
+  .col-offset4 {
+    margin-left: 50%;
+  }
+}
+
+@media #{$bp-mobile} {
+  .col1 {
+    width: 50%; 
+  }
+
+  .col2 {
+    width: 50%; 
+  }
+
+  .col3 {
+    width: 100%; 
+  }
+
+  .col4 {
+    width: 100%;
+  }
+
+  .col5 {
+    width: 100%;
+  }
+
+  .col6 {
+    width: 100%;
+  }
+
+  .col7 {
+    width: 100%;
+  }
+
+  .col8 {
+    width: 100%;
+  }
+
+  .col9 {
+    width: 100%;
+  }
+
+  .col10 {
+    width: 100%;
+  }
+
+  .col11 {
+    width: 100%;
+  }
+
+  .col12 {
+    width: 100%;
+  }
+  .col-offset2,
+  .col-offset3,
+  .col-offset4 {
+    margin-left: 0;
+  }
+}
+
+/* margins */
+
+.margin-b-20 {
+  margin-bottom: 20px;
+}
+
+.margin-t-20 {
+  margin-top: 20px;
+}
+
+.margin-r-20 {
+  margin-right: 20px;
+}
+
+.margin-l-20 {
+  margin-left: 20px;
+}
+
+.margin20 {
+  margin: 20px;
+}
+
+/* background colors */
+/*
+.primary-bg {
+  background: $primary-color;
+}
+
+.secondary-bg {
+  background: $secondary-color;
+}
+
+.tertiary-bg {
+  background: $tertiary-color;
+}
+
+.highlight-bg {
+  background: $hightlight-color;
+}
+*/

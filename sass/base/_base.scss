@@ -1,0 +1,77 @@
+@import "compass";
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+$primary-color: #08708a;
+$secondary-color: #56b1bf;
+$tertiary-color: #d0d3c5;
+$hightlight-color: #d73a31;
+$white: #ffffff;
+$black: #000000;
+
+$breakpoint-mobile:   767px;
+$breakpoint-tablet:   992px;
+$breakpoint-desktop:  1200px;
+$bp-mobile: "(max-width : 767px)";
+$bp-tablet: "(max-width : 992px)";
+$bp-desktop: "(max-width : 1200px)";
+$bp-gt-mobile: "(min-width : 768px)";
+$bp-gt-tablet: "(min-width : 993px)";
+$bp-gt-desktop: "(min-width : 1201px)";
+
+/* images */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* test alignments */
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* show/hide */
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+/* mobile show/hide */
+
+.visible-desktop {
+	@media #{$bp-gt-desktop} {
+		display: block;
+	}
+	@media #{$bp-tablet} {
+		display: none;
+	}
+	@media #{$bp-mobile} {
+		display: none;
+	}
+}
+
+.hidden-desktop {
+	@media #{$bp-gt-desktop} {
+		display: none;
+	}
+	@media #{$bp-tablet} {
+		display: block;
+	}
+	@media #{$bp-mobile} {
+		display: block;
+	}
+}
